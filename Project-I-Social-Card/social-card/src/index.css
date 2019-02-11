@@ -140,15 +140,6 @@ body {
   font-family: sans-serif;
 }
 
-.app-container {
-  width: 50%;
-  margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .app-container {
-    width: 75%;
-  }
-}
 h1,
 h2 {
   font-size: 1.6rem;

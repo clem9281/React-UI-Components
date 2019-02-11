@@ -5,10 +5,12 @@ import "./Card.css";
 
 const CardContainer = () => {
   return (
-    <section className="card-container">
-      <CardBanner />
-      <CardContent />
-    </section>
+    <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+      <section className="card-container">
+        <CardBanner />
+        <CardContent />
+      </section>
+    </a>
   );
 };
 
