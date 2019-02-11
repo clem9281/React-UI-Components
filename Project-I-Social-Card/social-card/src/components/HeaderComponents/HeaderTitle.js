@@ -18,9 +18,9 @@ const HeaderTitle = () => {
   ];
   const dateNow = `${new Date().getDate()} ${months[new Date().getMonth()]}`;
   return (
-    <div>
+    <div className="header-title">
       <h1> Lambda School </h1>
-      <p>@Lambda School {dateNow}</p>
+      <p className="subtext">@Lambda School • {dateNow}</p>
     </div>
   );
 };

@@ -1,1 +1,24 @@
 /* All styles for your header Components live here */
+
+.header-container {
+  display: flex;
+  width: 100%;
+  padding: 20px 0 10px;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+}
+.header-content {
+  width: 85%;
+}
+.header-title p {
+  margin-left: 1rem;
+}
+.image-thumbnail {
+  width: 15%;
+}
+.image-thumbnail img {
+  width: 90%;
+  margin: 0 auto;
+}
