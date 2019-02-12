@@ -52,7 +52,7 @@ class App extends React.Component {
       total = eval(total);
       this.setState({ total });
     } catch (err) {
-      total = "INVALID EXPRESSION";
+      total = "INVALID";
       this.setState({ total });
     }
   }
