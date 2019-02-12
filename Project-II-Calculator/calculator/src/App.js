@@ -3,6 +3,7 @@ import "./App.css";
 import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
 import NumberButton from "./components/ButtonComponents/NumberButton";
 import ActionButton from "./components/ButtonComponents/ActionButton";
+import math from "math";
 
 class App extends React.Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class App extends React.Component {
   clickEquals() {
     let total = this.state.total;
     try {
-      total = eval(total);
+      total = math.eval(total);
       this.setState({ total });
     } catch (err) {
       total = "INVALID";
