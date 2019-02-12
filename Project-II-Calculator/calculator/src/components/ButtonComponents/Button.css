@@ -1,16 +1,3 @@
-/* .numbers {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  background-color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40px 40px 40px;
-}
-.number {
-  background: white;
-} */
 .long-button {
   width: 75%;
 }
