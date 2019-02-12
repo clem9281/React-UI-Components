@@ -1,0 +1,33 @@
+/* .numbers {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px 40px;
+}
+.number {
+  background: white;
+} */
+.long-button {
+  width: 75%;
+}
+.short-button {
+  width: 25%;
+}
+.red-button {
+  background: maroon;
+  color: white;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  border: 0.5px solid grey;
+  height: 60px;
+  font-size: 2rem;
+  cursor: pointer;
+}
