@@ -16,28 +16,45 @@ class App extends React.Component {
     this.clickEquals = this.clickEquals.bind(this);
   }
   clear() {
-    console.log(this.state);
     this.setState({ total: "0" });
-    console.log(this.state);
   }
   clickNumber(event) {
-    if (this.state.total === "0") {
-      this.setState({ total: event.target.textContent });
+    let total = this.state.total;
+    if (total === "0") {
+      total = event.target.textContent;
+      this.setState({ total });
     } else {
+      total += event.target.textContent;
       this.setState({
-        total: (this.state.total += event.target.textContent)
+        total
       });
     }
   }
   clickOperator(event) {
-    if (event.target.textContent === "x") {
-      this.setState({ total: (this.state.total += "*") });
+    let total = this.state.total;
+    if (event.target.textContent === "\u00D7") {
+      total += "*";
+      this.setState({ total });
+    } else if (event.target.textContent === "\u00F7") {
+      total += "/";
+      this.setState({ total });
+    } else if (event.target.textContent === "\u2212") {
+      total += "-";
+      this.setState({ total });
     } else {
-      this.setState({ total: (this.state.total += event.target.textContent) });
+      total += event.target.textContent;
+      this.setState({ total });
     }
   }
   clickEquals() {
-    this.setState({ total: eval(this.state.total) });
+    let total = this.state.total;
+    try {
+      total = eval(total);
+      this.setState({ total });
+    } catch (err) {
+      total = "INVALID EXPRESSION";
+      this.setState({ total });
+    }
   }
   render() {
     return (
@@ -63,7 +80,7 @@ class App extends React.Component {
           />
           <NumberButton
             buttonStyle="short-button red-button"
-            text="/"
+            text={"\u00F7"}
             action={this.clickOperator}
           />
           <NumberButton
@@ -83,7 +100,7 @@ class App extends React.Component {
           />
           <NumberButton
             buttonStyle="short-button red-button"
-            text="x"
+            text={"\u00D7"}
             action={this.clickOperator}
           />
           <NumberButton
@@ -103,7 +120,7 @@ class App extends React.Component {
           />
           <NumberButton
             buttonStyle="short-button red-button"
-            text="-"
+            text={"\u2212"}
             action={this.clickOperator}
           />
           <NumberButton
