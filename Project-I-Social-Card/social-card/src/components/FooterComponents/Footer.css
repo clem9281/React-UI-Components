@@ -1,0 +1,13 @@
+footer {
+  margin-left: 15%;
+  padding: 10px 0;
+}
+footer .icons {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+footer img {
+  height: 2rem;
+  filter: opacity(65%);
+}
