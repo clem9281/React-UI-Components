@@ -1,0 +1,12 @@
+.calc-display {
+  width: 100%;
+  color: white;
+  background: black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.calc-display p {
+  font-size: 6rem;
+}

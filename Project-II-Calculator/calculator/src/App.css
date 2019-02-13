@@ -1,0 +1,27 @@
+.calc-container {
+  width: 20%;
+  margin: 20px auto;
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+  .calc-container {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .calc-container {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .calc-container {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .calc-container {
+    width: 90%;
+  }
+}

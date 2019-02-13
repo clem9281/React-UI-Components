@@ -1,0 +1,16 @@
+.long-button {
+  width: 75%;
+}
+.short-button {
+  width: 25%;
+}
+.red-button {
+  background: maroon;
+  color: white;
+}
+button {
+  border: 0.5px solid grey;
+  height: 60px;
+  font-size: 2rem;
+  cursor: pointer;
+}
