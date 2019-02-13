@@ -21,7 +21,7 @@ class App extends React.Component {
   }
   clickNumber(event) {
     let total = this.state.total;
-    if (total === "0") {
+    if (Number(total) === 0) {
       total = event.target.textContent;
       this.setState({ total });
     } else {
